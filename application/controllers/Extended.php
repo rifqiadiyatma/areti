@@ -11,10 +11,22 @@ class Extended extends CI_Controller {
   {
     $data = [
       'title' => 'Sweet Alert',
+      'parent' => 'extended',
       'page' => 'sweetalert'
     ];
 
     $this->load->view('extended/sweetalert', $data);
+  }
+
+  public function select2()
+  {
+    $data = [
+      'title' => 'Select2',
+      'parent' => 'extended',
+      'page' => 'select2'
+    ];
+
+    $this->load->view('extended/select2', $data);
   }
 
 }

@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- External CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/css/styles.css') ?>" type="text/css" />
     <!-- CDN Fontawesome -->
@@ -147,94 +149,171 @@
       </nav>
       <section class="title-content p-3">
         <h3><?= $title ?></h3>
-        <p>Lorem Ipsum</p>
+        <p>Check here for more icons <a href="https://icons.getbootstrap.com/" target="_blanks">Bootstrap Icon</a></p>
       </section>
       <section class="container-fluid">
-        <div class="row mb-3">
-          <!-- Badge Basic -->
-          <div class="col-12 col-md-6 mb-3">
-            <div class="card text-center">
-              <div class="card-header">
-                <h5>Badge Basic</h5>
-              </div>
-              <div class="card-body">
-                <span class="badge text-bg-primary">Primary</span>
-                <span class="badge text-bg-secondary">Secondary</span>
-                <span class="badge text-bg-success">Success</span>
-                <span class="badge text-bg-danger">Danger</span>
-                <span class="badge text-bg-warning">Warning</span>
-                <span class="badge text-bg-info">Info</span>
-                <span class="badge text-bg-light">Light</span>
-                <span class="badge text-bg-dark">Dark</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Badge Rounded -->
-          <div class="col-12 col-md-6">
-            <div class="card text-center">
-              <div class="card-header">
-                <h5>Badge Rounded</h5>
-              </div>
-              <div class="card-body">
-                <span class="badge rounded-pill text-bg-primary">Primary</span>
-                <span class="badge rounded-pill text-bg-secondary">Secondary</span>
-                <span class="badge rounded-pill text-bg-success">Success</span>
-                <span class="badge rounded-pill text-bg-danger">Danger</span>
-                <span class="badge rounded-pill text-bg-warning">Warning</span>
-                <span class="badge rounded-pill text-bg-info">Info</span>
-                <span class="badge rounded-pill text-bg-light">Light</span>
-                <span class="badge rounded-pill text-bg-dark">Dark</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mb-3">
-          <!-- Badge Heading -->
-          <div class="col-12 col-md-6 mb-3">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
             <div class="card">
               <div class="card-body">
-                <h1>Example heading <span class="badge bg-secondary">New</span></h1>
-                <h2>Example heading <span class="badge bg-secondary">New</span></h2>
-                <h3>Example heading <span class="badge bg-secondary">New</span></h3>
-                <h4>Example heading <span class="badge bg-secondary">New</span></h4>
-                <h5>Example heading <span class="badge bg-secondary">New</span></h5>
-                <h6>Example heading <span class="badge bg-secondary">New</span></h6>
+                <div class="text-center">
+                  <i class="bi bi-archive" style="font-size: 2rem;"></i>
+                  <p class="mt-2">.bi bi-archive</p>
+                </div>
               </div>
             </div>
           </div>
-
-          <!-- Badge Position -->
-          <div class="col-12 col-md-6 mb-3">
-            <div class="card text-center">
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
               <div class="card-body">
-                
-                <button type="button" class="btn btn-primary m-3">
-                  Notifications <span class="badge text-bg-secondary">4</span>
-                </button>
-
-                <button type="button" class="btn btn-primary m-3 position-relative">
-                  Inbox
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    99+
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </button>
-
-                <button type="button" class="btn btn-primary m-3 position-relative">
-                  Profile
-                  <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-                    <span class="visually-hidden">New alerts</span>
-                  </span>
-                </button>
-
+                <div class="text-center">
+                  <i class="bi bi-alarm" style="font-size: 2rem;"></i>
+                  <p class="mt-2">.bi bi-alarm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="bi bi-arrow-left-square" style="font-size: 2rem;"></i>
+                  <p class="mt-2">.bi bi-arrow-left-square</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="bi bi-calendar" style="font-size: 2rem;"></i>
+                  <p class="mt-2">.bi bi-calendar</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="bi bi-cart" style="font-size: 2rem;"></i>
+                  <p class="mt-2">.bi bi-cart</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="bi bi-check-all" style="font-size: 2rem;"></i>
+                  <p class="mt-2">.bi bi-check-all</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="bi bi-database" style="font-size: 2rem;"></i>
+                  <p class="mt-2">.bi bi-database</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="bi bi-envelope" style="font-size: 2rem;"></i>
+                  <p class="mt-2">.bi bi-envelope</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="bi bi-inbox" style="font-size: 2rem;"></i>
+                  <p class="mt-2">.bi bi-inbox</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="bi bi-mic" style="font-size: 2rem;"></i>
+                  <p class="mt-2">.bi bi-mic</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="bi bi-person-plus" style="font-size: 2rem;"></i>
+                  <p class="mt-2">.bi bi-person-plus"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="bi bi-file-pdf" style="font-size: 2rem;"></i>
+                  <p class="mt-2">.bi bi-file-pdf</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="bi bi-files" style="font-size: 2rem;"></i>
+                  <p class="mt-2">.bi bi-files</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="bi bi-folder" style="font-size: 2rem;"></i>
+                  <p class="mt-2">.bi bi-folder</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="bi bi-hand-thumbs-up" style="font-size: 2rem;"></i>
+                  <p class="mt-2">.bi bi-hand-thumbs-up</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="bi bi-rocket" style="font-size: 2rem;"></i>
+                  <p class="mt-2">.bi bi-rocket</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        
       </section>
     </main>
     <!-- Bootstrap JS -->

@@ -147,94 +147,171 @@
       </nav>
       <section class="title-content p-3">
         <h3><?= $title ?></h3>
-        <p>Lorem Ipsum</p>
+        <p>Check here for more icons <a href="https://fontawesome.com/search" target="_blanks">Fontawesome</a></p>
       </section>
       <section class="container-fluid">
-        <div class="row mb-3">
-          <!-- Badge Basic -->
-          <div class="col-12 col-md-6 mb-3">
-            <div class="card text-center">
-              <div class="card-header">
-                <h5>Badge Basic</h5>
-              </div>
-              <div class="card-body">
-                <span class="badge text-bg-primary">Primary</span>
-                <span class="badge text-bg-secondary">Secondary</span>
-                <span class="badge text-bg-success">Success</span>
-                <span class="badge text-bg-danger">Danger</span>
-                <span class="badge text-bg-warning">Warning</span>
-                <span class="badge text-bg-info">Info</span>
-                <span class="badge text-bg-light">Light</span>
-                <span class="badge text-bg-dark">Dark</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Badge Rounded -->
-          <div class="col-12 col-md-6">
-            <div class="card text-center">
-              <div class="card-header">
-                <h5>Badge Rounded</h5>
-              </div>
-              <div class="card-body">
-                <span class="badge rounded-pill text-bg-primary">Primary</span>
-                <span class="badge rounded-pill text-bg-secondary">Secondary</span>
-                <span class="badge rounded-pill text-bg-success">Success</span>
-                <span class="badge rounded-pill text-bg-danger">Danger</span>
-                <span class="badge rounded-pill text-bg-warning">Warning</span>
-                <span class="badge rounded-pill text-bg-info">Info</span>
-                <span class="badge rounded-pill text-bg-light">Light</span>
-                <span class="badge rounded-pill text-bg-dark">Dark</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mb-3">
-          <!-- Badge Heading -->
-          <div class="col-12 col-md-6 mb-3">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
             <div class="card">
               <div class="card-body">
-                <h1>Example heading <span class="badge bg-secondary">New</span></h1>
-                <h2>Example heading <span class="badge bg-secondary">New</span></h2>
-                <h3>Example heading <span class="badge bg-secondary">New</span></h3>
-                <h4>Example heading <span class="badge bg-secondary">New</span></h4>
-                <h5>Example heading <span class="badge bg-secondary">New</span></h5>
-                <h6>Example heading <span class="badge bg-secondary">New</span></h6>
+                <div class="text-center">
+                  <i class="fa-solid fa-house fa-3x"></i>
+                  <p class="mt-2">.fa-solid fa-house</p>
+                </div>
               </div>
             </div>
           </div>
-
-          <!-- Badge Position -->
-          <div class="col-12 col-md-6 mb-3">
-            <div class="card text-center">
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
               <div class="card-body">
-                
-                <button type="button" class="btn btn-primary m-3">
-                  Notifications <span class="badge text-bg-secondary">4</span>
-                </button>
-
-                <button type="button" class="btn btn-primary m-3 position-relative">
-                  Inbox
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    99+
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </button>
-
-                <button type="button" class="btn btn-primary m-3 position-relative">
-                  Profile
-                  <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-                    <span class="visually-hidden">New alerts</span>
-                  </span>
-                </button>
-
+                <div class="text-center">
+                  <i class="fa-solid fa-user fa-3x"></i>
+                  <p class="mt-2">.fa-solid fa-user</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="fa-solid fa-check fa-3x"></i>
+                  <p class="mt-2">.fa-solid fa-check</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="fa-solid fa-plus fa-3x"></i>
+                  <p class="mt-2">.fa-solid fa-plus</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="fa-solid fa-phone fa-3x"></i>
+                  <p class="mt-2">.fa-solid fa-phone</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="fa-solid fa-star fa-3x"></i>
+                  <p class="mt-2">.fa-solid fa-star</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="fa-brands fa-facebook fa-3x"></i>
+                  <p class="mt-2">.fa-brands fa-facebook</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="fa-brands fa-twitter fa-3x"></i>
+                  <p class="mt-2">.fa-brands fa-twitter</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="fa-solid fa-download fa-3x"></i>
+                  <p class="mt-2">.fa-solid fa-download</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="fa-solid fa-bars fa-3x"></i>
+                  <p class="mt-2">.fa-solid fa-bars</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="fa-solid fa-envelope fa-3x"></i>
+                  <p class="mt-2">.fa-solid fa-enveope</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="fa-solid fa-poo fa-3x"></i>
+                  <p class="mt-2">.fa-solid fa-poo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="fa-solid fa-calendar-days fa-3x"></i>
+                  <p class="mt-2">.fa-solid fa-calendar-days</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="fa-solid fa-file fa-3x"></i>
+                  <p class="mt-2">.fa-solid fa-file</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="fa-solid fa-cart-shopping fa-3x"></i>
+                  <p class="mt-2">.fa-solid fa-cart-shopping</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="fa-solid fa-circle-user fa-3x"></i>
+                  <p class="mt-2">.fa-solid fa-circle-user</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        
       </section>
     </main>
     <!-- Bootstrap JS -->

@@ -11,7 +11,8 @@ class Table extends CI_Controller {
   {
     $data = [
       'title' => 'Basic Table',
-      'pages' => 'table' 
+      'parent' => 'table',
+      'page' => 'basictable' 
     ];
 
     $this->load->view('table/basictable', $data);
@@ -21,7 +22,8 @@ class Table extends CI_Controller {
   {
     $data = [
       'title' => 'DataTables',
-      'pages' => 'table' 
+      'parent' => 'table',
+      'page' => 'datatables' 
     ];
 
     $this->load->view('table/datatables', $data);

@@ -19,7 +19,7 @@
     <nav class="navbar bg-body-tertiary navbar-expand fixed-bottom p-0 d-md-none d-lg-none d-xl-none">
         <ul class="navbar-nav nav-justified w-100">
             <li class="nav-item">
-                <a href="#" class="nav-link text-center">
+                <a href="javascript:void(0)" class="nav-link text-center">
                     <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
@@ -31,7 +31,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link text-center">
+                <a href="javascript:void(0)" class="nav-link text-center">
                     <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
@@ -43,7 +43,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link text-center">
+                <a href="javascript:void(0)" class="nav-link text-center">
                     <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
@@ -69,9 +69,9 @@
           <p>Menu</p>
           <a href="<?= base_url('dashboard') ?>" class="item-menu <?= $page == 'dashboard' ? 'active' : '' ?>">
             <i class="icon fa-solid fa-house"></i> Dashboard </a>
-          <a href="#" class="item-menu">
+          <a href="javascript:void(0)" class="item-menu">
             <i class="icon fas fa-columns"></i> Layout </a>
-          <a href="#" class="item-menu has-tree <?= isset($parent) && ($parent == 'component') ? 'active arrow-down' : '' ?>">
+          <a href="javascript:void(0)" class="item-menu has-tree <?= isset($parent) && ($parent == 'component') ? 'active arrow-down' : '' ?>">
             <i class="icon fa-solid fa-layer-group"></i> Component </a>
             <div class="child <?= isset($parent) && ($parent == 'component') ? 'open' : '' ?>">
               <a href="<?= base_url('component/accordion') ?>" class="item-menu <?= $page == 'accordion' ? 'active' : '' ?>"> Accordion </a>
@@ -83,19 +83,19 @@
               <a href="<?= base_url('component/toast') ?>" class="item-menu <?= $page == 'toast' ? 'active' : '' ?>"> Toast </a>
               <a href="<?= base_url('component/tooltips') ?>" class="item-menu <?= $page == 'tooltips' ? 'active' : '' ?>"> Tooltips </a>
             </div>
-          <a href="#" class="item-menu has-tree <?= isset($parent) && ($parent == 'table') ? 'active arrow-down' : '' ?>">
+          <a href="javascript:void(0)" class="item-menu has-tree <?= isset($parent) && ($parent == 'table') ? 'active arrow-down' : '' ?>">
             <i class="icon fas fa-table"></i> Table </a>
             <div class="child <?= isset($parent) && ($parent == 'table') ? 'open' : '' ?>">
               <a href="<?= base_url('table/basictable') ?>" class="item-menu <?= $page == 'basictable' ? 'active' : '' ?>"> Basic Table </a>
               <a href="<?= base_url('table/datatables') ?>" class="item-menu <?= $page == 'datatables' ? 'active' : '' ?>"> Datatables </a>
             </div>
-          <a href="#" class="item-menu has-tree <?= isset($parent) && ($parent == 'icon') ? 'active arrow-down' : '' ?>">
+          <a href="javascript:void(0)" class="item-menu has-tree <?= isset($parent) && ($parent == 'icon') ? 'active arrow-down' : '' ?>">
             <i class="icon fas fa-icons"></i> Icon </a>
             <div class="child <?= isset($parent) && ($parent == 'icon') ? 'open' : '' ?>">
               <a href="<?= base_url('icon/fa') ?>" class="item-menu <?= $page == 'fontawesome' ? 'active' : '' ?>"> Font Awesome </a>
               <a href="<?= base_url('icon/bi') ?>" class="item-menu <?= $page == 'bootstrapicon' ? 'active' : '' ?>"> Bootstrap Icons </a>
             </div>    
-          <a href="#" class="item-menu has-tree <?= isset($parent) && ($parent == 'extended') ? 'active arrow-down' : '' ?>">
+          <a href="javascript:void(0)" class="item-menu has-tree <?= isset($parent) && ($parent == 'extended') ? 'active arrow-down' : '' ?>">
             <i class="icon fa-solid fa-book"></i> Extended </a>
             <div class="child <?= isset($parent) && ($parent == 'extended') ? 'open' : '' ?>">
               <a href="<?= base_url('extended/select2') ?>" class="item-menu <?= $page == 'select2' ? 'active' : '' ?>"> Select2 </a>
@@ -106,7 +106,7 @@
         </div>
         <div class="menu">
           <p>Settings</p>
-          <a href="#" class="item-menu">
+          <a href="javascript:void(0)" class="item-menu">
             <i class="icon fas fa-sign-out"></i> Logout </a>
         </div>
       </div>
@@ -129,16 +129,16 @@
               <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="Photo Profile" class="avatar dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" />
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">Akun Saya</a>
+                  <a class="dropdown-item" href="javascript:void(0)">Akun Saya</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Ganti Password</a>
+                  <a class="dropdown-item" href="javascript:void(0)">Ganti Password</a>
                 </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Logout</a>
+                  <a class="dropdown-item" href="javascript:void(0)">Logout</a>
                 </li>
               </ul>
             </div>
@@ -150,99 +150,38 @@
         <p>Lorem Ipsum</p>
       </section>
       <section class="container-fluid">
-        <div class="row mb-3">
-          <!-- Badge Basic -->
-          <div class="col-12 col-md-6 mb-3">
-            <div class="card text-center">
-              <div class="card-header">
-                <h5>Badge Basic</h5>
-              </div>
-              <div class="card-body">
-                <span class="badge text-bg-primary">Primary</span>
-                <span class="badge text-bg-secondary">Secondary</span>
-                <span class="badge text-bg-success">Success</span>
-                <span class="badge text-bg-danger">Danger</span>
-                <span class="badge text-bg-warning">Warning</span>
-                <span class="badge text-bg-info">Info</span>
-                <span class="badge text-bg-light">Light</span>
-                <span class="badge text-bg-dark">Dark</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Badge Rounded -->
-          <div class="col-12 col-md-6">
-            <div class="card text-center">
-              <div class="card-header">
-                <h5>Badge Rounded</h5>
-              </div>
-              <div class="card-body">
-                <span class="badge rounded-pill text-bg-primary">Primary</span>
-                <span class="badge rounded-pill text-bg-secondary">Secondary</span>
-                <span class="badge rounded-pill text-bg-success">Success</span>
-                <span class="badge rounded-pill text-bg-danger">Danger</span>
-                <span class="badge rounded-pill text-bg-warning">Warning</span>
-                <span class="badge rounded-pill text-bg-info">Info</span>
-                <span class="badge rounded-pill text-bg-light">Light</span>
-                <span class="badge rounded-pill text-bg-dark">Dark</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mb-3">
-          <!-- Badge Heading -->
-          <div class="col-12 col-md-6 mb-3">
+        <div class="row">
+          <div class="col-12">
             <div class="card">
-              <div class="card-body">
-                <h1>Example heading <span class="badge bg-secondary">New</span></h1>
-                <h2>Example heading <span class="badge bg-secondary">New</span></h2>
-                <h3>Example heading <span class="badge bg-secondary">New</span></h3>
-                <h4>Example heading <span class="badge bg-secondary">New</span></h4>
-                <h5>Example heading <span class="badge bg-secondary">New</span></h5>
-                <h6>Example heading <span class="badge bg-secondary">New</span></h6>
+              <div class="card-header">
+                Toast Example
               </div>
-            </div>
-          </div>
-
-          <!-- Badge Position -->
-          <div class="col-12 col-md-6 mb-3">
-            <div class="card text-center">
               <div class="card-body">
-                
-                <button type="button" class="btn btn-primary m-3">
-                  Notifications <span class="badge text-bg-secondary">4</span>
-                </button>
-
-                <button type="button" class="btn btn-primary m-3 position-relative">
-                  Inbox
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    99+
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </button>
-
-                <button type="button" class="btn btn-primary m-3 position-relative">
-                  Profile
-                  <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-                    <span class="visually-hidden">New alerts</span>
-                  </span>
-                </button>
-
+                <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
               </div>
             </div>
           </div>
         </div>
-
-        
       </section>
     </main>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">Areti</strong>
+          <small>11 mins ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Hello, world! This is a toast message.
+        </div>
+      </div>
+    </div>  
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="<?= base_url('assets/js/script.js') ?>"></script>
-    <script src="<?= base_url('assets/js/sweetalert.js') ?>"></script>
     <script>
       $(document).ready(function() {
         $('.sidebarCollapseDefault').on('click', function() {
@@ -250,6 +189,17 @@
           $('.content').toggleClass('active');
         });
       });
+    </script>
+    <script>
+      const toastTrigger = document.getElementById('liveToastBtn')
+      const toastLiveExample = document.getElementById('liveToast')
+      if (toastTrigger) {
+        toastTrigger.addEventListener('click', () => {
+          const toast = new bootstrap.Toast(toastLiveExample)
+
+          toast.show()
+        })
+      }
     </script>
   </body>
 </html>

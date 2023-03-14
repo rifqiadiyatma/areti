@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="ITERA Admin Dashboard Page" />
@@ -14,7 +14,7 @@
     <!-- CDN Fontawesome -->
     <script src="https://kit.fontawesome.com/32f82e1dca.js" cross="anonymous"></script>
   </head>
-  <body data-bs-theme="light">
+  <body>
     <!-- Bottom Navbar -->
     <nav class="navbar bg-body-tertiary navbar-expand fixed-bottom p-0 d-md-none d-lg-none d-xl-none">
         <ul class="navbar-nav nav-justified w-100">
@@ -67,30 +67,41 @@
       <div class="pt-2 d-flex flex-column gap-5 mx-2">
         <div class="menu p-0">
           <p>Menu</p>
-          <a href="<?= base_url('dashboard') ?>" class="item-menu active">
+          <a href="<?= base_url('dashboard') ?>" class="item-menu <?= $page == 'dashboard' ? 'active' : '' ?>">
             <i class="icon fa-solid fa-house"></i> Dashboard </a>
           <a href="#" class="item-menu">
             <i class="icon fas fa-columns"></i> Layout </a>
-          <a href="#" class="item-menu has-tree">
+          <a href="#" class="item-menu has-tree <?= isset($parent) && ($parent == 'component') ? 'active arrow-down' : '' ?>">
             <i class="icon fa-solid fa-layer-group"></i> Component </a>
-          <div class="child">
-            <a href="#" class="item-menu"> Accordion </a>
-            <a href="#" class="item-menu"> Alerts </a>
-            <a href="#" class="item-menu"> Badge </a>
-            <a href="#" class="item-menu"> Buttons </a>
-            <a href="#" class="item-menu"> Card </a>
-            <a href="#" class="item-menu"> Modal </a>
-            <a href="#" class="item-menu"> Tooltips </a>
-          </div>
-          <a href="#" class="item-menu has-tree">
+            <div class="child <?= isset($parent) && ($parent == 'component') ? 'open' : '' ?>">
+              <a href="<?= base_url('component/accordion') ?>" class="item-menu <?= $page == 'accordion' ? 'active' : '' ?>"> Accordion </a>
+              <a href="<?= base_url('component/alerts') ?>" class="item-menu <?= $page == 'alerts' ? 'active' : '' ?>"> Alerts </a>
+              <a href="<?= base_url('component/badge') ?>" class="item-menu <?= $page == 'badge' ? 'active' : '' ?>"> Badge </a>
+              <a href="<?= base_url('component/buttons') ?>" class="item-menu <?= $page == 'buttons' ? 'active' : '' ?>"> Buttons </a>
+              <a href="<?= base_url('component/card') ?>" class="item-menu <?= $page == 'card' ? 'active' : '' ?>"> Card </a>
+              <a href="<?= base_url('component/modal') ?>" class="item-menu <?= $page == 'modal' ? 'active' : '' ?>"> Modal </a>
+              <a href="<?= base_url('component/toast') ?>" class="item-menu <?= $page == 'toast' ? 'active' : '' ?>"> Toast </a>
+              <a href="<?= base_url('component/tooltips') ?>" class="item-menu <?= $page == 'tooltips' ? 'active' : '' ?>"> Tooltips </a>
+            </div>
+          <a href="#" class="item-menu has-tree <?= isset($parent) && ($parent == 'table') ? 'active arrow-down' : '' ?>">
             <i class="icon fas fa-table"></i> Table </a>
-          <div class="child">
-            <a href="<?= base_url('table/basictable') ?>" class="item-menu">
-              <i class="icon fa-solid fa-layer-group"></i> Basic Table </a>
-            <a href="<?= base_url('table/datatables') ?>" class="item-menu">
-              <i class="icon fa-solid fa-layer-group"></i> Datatables </a>
-          </div>
-          <a href="<?= base_url('form') ?>" class="item-menu">
+            <div class="child <?= isset($parent) && ($parent == 'table') ? 'open' : '' ?>">
+              <a href="<?= base_url('table/basictable') ?>" class="item-menu <?= $page == 'basictable' ? 'active' : '' ?>"> Basic Table </a>
+              <a href="<?= base_url('table/datatables') ?>" class="item-menu <?= $page == 'datatables' ? 'active' : '' ?>"> Datatables </a>
+            </div>
+          <a href="#" class="item-menu has-tree <?= isset($parent) && ($parent == 'icon') ? 'active arrow-down' : '' ?>">
+            <i class="icon fas fa-icons"></i> Icon </a>
+            <div class="child <?= isset($parent) && ($parent == 'icon') ? 'open' : '' ?>">
+              <a href="<?= base_url('icon/fa') ?>" class="item-menu <?= $page == 'fontawesome' ? 'active' : '' ?>"> Font Awesome </a>
+              <a href="<?= base_url('icon/bi') ?>" class="item-menu <?= $page == 'bootstrapicon' ? 'active' : '' ?>"> Bootstrap Icons </a>
+            </div>    
+          <a href="#" class="item-menu has-tree <?= isset($parent) && ($parent == 'extended') ? 'active arrow-down' : '' ?>">
+            <i class="icon fa-solid fa-book"></i> Extended </a>
+            <div class="child <?= isset($parent) && ($parent == 'extended') ? 'open' : '' ?>">
+              <a href="<?= base_url('extended/select2') ?>" class="item-menu <?= $page == 'select2' ? 'active' : '' ?>"> Select2 </a>
+              <a href="<?= base_url('extended/sweetalert') ?>" class="item-menu <?= $page == 'sweetalert' ? 'active' : '' ?>"> Sweet Alert </a>
+            </div>    
+          <a href="<?= base_url('form') ?>" class="item-menu <?= $page == 'form' ? 'active' : '' ?>">
             <i class="icon fa-solid fa-file"></i> Form </a>
         </div>
         <div class="menu">
@@ -251,6 +262,7 @@
     </main>
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="<?= base_url('assets/js/script.js') ?>"></script>

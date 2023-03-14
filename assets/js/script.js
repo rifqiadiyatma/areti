@@ -17,7 +17,7 @@ $(document).ready(function () {
 
 document.addEventListener('DOMContentLoaded', function () {
   $('#dark-mode').on('click', function () {
-    $('body').attr('data-bs-theme', (_, attr) => attr == "light" ? "dark" : "light");
+    $('html').attr('data-bs-theme', (_, attr) => attr == "light" ? "dark" : "light");
     $(this).toggleClass('btn-outline-secondary btn-primary');
     $(this).find('i').toggleClass('fa-moon fa-sun');
   });

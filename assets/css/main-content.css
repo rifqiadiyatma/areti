@@ -51,31 +51,19 @@
   padding: 1rem;
 }
 
-.card-header {
+.card-header, .card-footer {
   border: none;
   background-color: inherit;
-  /* color: #0d1458; */
-  font-weight: 600;
-  margin-top: 10px;
+  font-weight: 500;
 }
 
 /* Dark Theme */
 
-body.dark {
+/* body[data-bs-theme="dark"] {
   background-color: #181a1b;
-}
-
-body[data-bs-theme="dark"] {
-  background-color: #181a1b;
-}
-
-body[data-bs-theme="dark"] .content {
-  background-color: #1b1d1e;
-}
-.dark .content {
-  background-color: #1b1d1e;
-}
-
-/* .dark .title-content h3 {
-  color: #fff;
 } */
+
+html[data-bs-theme="dark"] .content {
+  background-color: #1b1d1e;
+}
+

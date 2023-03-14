@@ -11,6 +11,7 @@ class Component extends CI_Controller {
   {
     $data = [
       'title' => 'Accordion',
+      'parent' => 'component',
       'page' => 'accordion'
     ];
     
@@ -21,6 +22,7 @@ class Component extends CI_Controller {
   {
     $data = [
       'title' => 'Alerts',
+      'parent' => 'component',
       'page' => 'alerts'
     ];
     
@@ -31,6 +33,7 @@ class Component extends CI_Controller {
   {
     $data = [
       'title' => 'Badge',
+      'parent' => 'component',
       'page' => 'badge'
     ];
     
@@ -41,6 +44,7 @@ class Component extends CI_Controller {
   {
     $data = [
       'title' => 'Buttons',
+      'parent' => 'component',
       'page' => 'buttons'
     ];
     
@@ -51,6 +55,7 @@ class Component extends CI_Controller {
   {
     $data = [
       'title' => 'Card',
+      'parent' => 'component',
       'page' => 'card'
     ];
     
@@ -61,16 +66,29 @@ class Component extends CI_Controller {
   {
     $data = [
       'title' => 'Modal',
+      'parent' => 'component',
       'page' => 'modal'
     ];
     
     $this->load->view('component/modal', $data);
+  }
+  
+  public function toast()
+  {
+    $data = [
+      'title' => 'Toast',
+      'parent' => 'component',
+      'page' => 'toast'
+    ];
+    
+    $this->load->view('component/toast', $data);
   }
 
   public function tooltips()
   {
     $data = [
       'title' => 'Tooltips',
+      'parent' => 'component',
       'page' => 'tooltips'
     ];
     
