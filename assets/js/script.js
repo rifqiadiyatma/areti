@@ -1,15 +1,12 @@
-// var toggler = document.getElementsByClassName('has-tree');
-// var i;
+$(function() {
+  $('.sidebarCollapseDefault').on('click', function() {
+    $('.sidebar').toggleClass('active');
+    $('.content').toggleClass('active');
+  });
+});
 
-// for (i = 0; i < toggler.length; i++) {
-//   toggler[i].addEventListener('click', function () {
-//     this.parentElement.querySelector('.child').classList.toggle('open');
-//     this.classList.toggle('arrow-down');
-//   });
-// }
-
-$(document).ready(function () {
-  $('.has-tree').click(function () {
+$(function () {
+  $('.has-tree').on('click', function () {
     $(this).next('.child').toggleClass('open');
     $(this).toggleClass('arrow-down');
   });

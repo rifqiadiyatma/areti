@@ -8,15 +8,15 @@
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" />
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="<?= base_url('assets/modules/bootstrap/css/bootstrap.min.css') ?>">
     <!-- External CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/css/styles.css') ?>" type="text/css" />
-    <!-- CDN Fontawesome -->
-    <script src="https://kit.fontawesome.com/32f82e1dca.js" cross="anonymous"></script>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="<?= base_url('assets/modules/fontawesome/css/all.min.css') ?>">
   </head>
   <body>
     <!-- Bottom Navbar -->
-    <nav class="navbar bg-body-tertiary navbar-expand fixed-bottom p-0 d-md-none d-lg-none d-xl-none">
+    <nav class="navbar bg-body-tertiary navbar-expand border-top fixed-bottom p-0 d-md-none d-lg-none d-xl-none">
         <ul class="navbar-nav nav-justified w-100">
             <li class="nav-item">
                 <a href="javascript:void(0)" class="nav-link text-center">
@@ -100,7 +100,15 @@
             <div class="child <?= isset($parent) && ($parent == 'extended') ? 'open' : '' ?>">
               <a href="<?= base_url('extended/select2') ?>" class="item-menu <?= $page == 'select2' ? 'active' : '' ?>"> Select2 </a>
               <a href="<?= base_url('extended/sweetalert') ?>" class="item-menu <?= $page == 'sweetalert' ? 'active' : '' ?>"> Sweet Alert </a>
-            </div>    
+            </div>
+          <a href="#" class="item-menu has-tree">
+            <i class="icon fa-solid fa-face-frown"></i> Error </a>
+            <div class="child">
+              <a href="<?= base_url('errorpage/page403') ?>" class="item-menu"> 403 </a>
+              <a href="<?= base_url('errorpage/page404') ?>" class="item-menu"> 404 </a>
+              <a href="<?= base_url('errorpage/page500') ?>" class="item-menu"> 500 </a>
+              <a href="<?= base_url('errorpage/page503') ?>" class="item-menu"> 503 </a>
+            </div>     
           <a href="<?= base_url('form') ?>" class="item-menu <?= $page == 'form' ? 'active' : '' ?>">
             <i class="icon fa-solid fa-file"></i> Form </a>
         </div>
@@ -126,7 +134,7 @@
           <div class="d-flex align-items-center justify-content-end gap-4">
             <button class="btn btn-outline-secondary rounded-circle" id="dark-mode"><i class="fa fa-moon"></i></button>
             <div class="btn-group dropstart">
-              <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="Photo Profile" class="avatar dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" />
+              <img src="<?= base_url('assets/images/avatar.jpg') ?>" alt="Photo Profile" class="avatar dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" />
               <ul class="dropdown-menu">
                 <li>
                   <a class="dropdown-item" href="javascript:void(0)">Akun Saya</a>
@@ -147,7 +155,7 @@
       </nav>
       <section class="title-content p-3">
         <h3><?= $title ?></h3>
-        <p>Lorem Ipsum</p>
+        <p>Check documentation <a href="https://getbootstrap.com/docs/5.3/components/toasts/" target="_blank">toast</a></p>
       </section>
       <section class="container-fluid">
         <div class="row">
@@ -157,7 +165,11 @@
                 Toast Example
               </div>
               <div class="card-body">
-                <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+                <button type="button" class="btn btn-primary mb-3" id="liveToastBtn">Toast Bottom Right</button>
+                <button type="button" class="btn btn-primary mb-3" id="liveToastBtn2">Toast Top Right</button>
+                <button type="button" class="btn btn-primary mb-3" id="liveToastBtn3">Toast Custom</button>
+                <button type="button" class="btn btn-primary mb-3" id="liveToastBtn4">Toast Color</button>
+                <button type="button" class="btn btn-primary mb-3" id="liveToastBtn5">Toast Action</button>
               </div>
             </div>
           </div>
@@ -165,6 +177,7 @@
       </section>
     </main>
 
+    <!-- Toast Bottom Right -->
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
       <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header">
@@ -173,29 +186,114 @@
           <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
         </div>
         <div class="toast-body">
-          Hello, world! This is a toast message.
+          Hello, world! This is a toast bottom right.
         </div>
       </div>
-    </div>  
+    </div>
+
+    <!-- Toast Top Right -->
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+      <div id="liveToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">Areti</strong>
+          <small>11 mins ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Hello, world! This is a toast top right.
+        </div>
+      </div>
+    </div>
+    
+    <!-- Toast Custom Content   -->
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+      <div id="liveToast3" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body">
+            Hello, world! This is a toast custom content.
+          </div>
+          <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast with color -->
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+      <div id="liveToast4" class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body">
+            Hello, world! This is a toast with color.
+          </div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast with action -->
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+      <div id="liveToast5" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+          Hello, world! This is a toast with cta.
+          <div class="mt-2 pt-2 border-top">
+            <button type="button" class="btn btn-primary btn-sm">Take action</button>
+            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="<?= base_url('assets/js/jquery.min.js') ?>"></script>
     <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="<?= base_url('assets/modules/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+    <!-- App JS -->
     <script src="<?= base_url('assets/js/script.js') ?>"></script>
-    <script>
-      $(document).ready(function() {
-        $('.sidebarCollapseDefault').on('click', function() {
-          $('.sidebar').toggleClass('active');
-          $('.content').toggleClass('active');
-        });
-      });
-    </script>
     <script>
       const toastTrigger = document.getElementById('liveToastBtn')
       const toastLiveExample = document.getElementById('liveToast')
       if (toastTrigger) {
         toastTrigger.addEventListener('click', () => {
           const toast = new bootstrap.Toast(toastLiveExample)
+
+          toast.show()
+        })
+      }
+
+      const toastTrigger2 = document.getElementById('liveToastBtn2')
+      const toastLiveExample2 = document.getElementById('liveToast2')
+      if (toastTrigger2) {
+        toastTrigger2.addEventListener('click', () => {
+          const toast = new bootstrap.Toast(toastLiveExample2)
+
+          toast.show()
+        })
+      }
+
+      const toastTrigger3 = document.getElementById('liveToastBtn3')
+      const toastLiveExample3 = document.getElementById('liveToast3')
+      if (toastTrigger3) {
+        toastTrigger3.addEventListener('click', () => {
+          const toast = new bootstrap.Toast(toastLiveExample3)
+
+          toast.show()
+        })
+      }
+
+      const toastTrigger4 = document.getElementById('liveToastBtn4')
+      const toastLiveExample4 = document.getElementById('liveToast4')
+      if (toastTrigger4) {
+        toastTrigger4.addEventListener('click', () => {
+          const toast = new bootstrap.Toast(toastLiveExample4)
+
+          toast.show()
+        })
+      }
+
+      const toastTrigger5 = document.getElementById('liveToastBtn5')
+      const toastLiveExample5 = document.getElementById('liveToast5')
+      if (toastTrigger5) {
+        toastTrigger5.addEventListener('click', () => {
+          const toast = new bootstrap.Toast(toastLiveExample5)
 
           toast.show()
         })

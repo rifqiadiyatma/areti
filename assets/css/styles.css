@@ -1,6 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700';
-@import url('./nav-sidebar.css');
-@import url('./main-content.css');
+@import url('./sidebar.css');
+@import url('./content.css');
 
 * {
   font-family: 'Poppins', sans-serif;
@@ -19,5 +19,6 @@
 @media (max-width: 767.98px) {
   .content {
     margin-left: 0;
+    margin-bottom: 3rem;
   }
 }

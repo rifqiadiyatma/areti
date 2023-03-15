@@ -11,6 +11,15 @@
   margin-left: 0px;
 }
 
+.error-page {
+  background: #ecf0ff;
+  min-height: 100vh;
+}
+
+.error-page h1 {
+  font-size: 9rem;
+}
+
 .title-content {
   display: flex;
   flex-direction: column;
@@ -67,3 +76,6 @@ html[data-bs-theme="dark"] .content {
   background-color: #1b1d1e;
 }
 
+html[data-bs-theme="dark"] i {
+  color: #fff;
+}
