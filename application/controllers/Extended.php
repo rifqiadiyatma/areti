@@ -29,6 +29,28 @@ class Extended extends CI_Controller {
     $this->load->view('extended/select2', $data);
   }
 
+  public function ckeditor()
+  {
+    $data = [
+      'title' => 'CKEditor',
+      'parent' => 'extended',
+      'page' => 'ckeditor'
+    ];
+
+    $this->load->view('extended/ckeditor', $data);
+  }
+
+  public function tinymce()
+  {
+    $data = [
+      'title' => 'TinyMCE',
+      'parent' => 'extended',
+      'page' => 'tinymce'
+    ];
+
+    $this->load->view('extended/tinymce', $data);
+  }
+
 }
 
 /* End of file: Extended.php */

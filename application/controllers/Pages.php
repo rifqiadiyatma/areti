@@ -7,7 +7,7 @@ class Pages extends CI_Controller {
     parent::__construct();
   }
 
-  public function index()
+  public function myprofile()
   {
     $data = [
       'title' => 'My Profile',
@@ -28,17 +28,6 @@ class Pages extends CI_Controller {
 
     $this->load->view('pages/changepassword', $data);
   }
-
-  public function blankpage()
-  {
-    $data = [
-      'title' => 'Blank Page',
-      'parent' => 'pages',
-      'page' => 'blankpage'
-    ];
-
-    $this->load->view('pages/blankpage', $data);
-  }
   
   public function settings()
   {
@@ -50,6 +39,40 @@ class Pages extends CI_Controller {
 
     $this->load->view('pages/settings', $data);
   }
+
+  public function addproduct()
+  {
+    $data = [
+      'title' => 'Add Product',
+      'parent' => 'pages',
+      'page' => 'addproduct'
+    ];
+
+    $this->load->view('pages/addproduct', $data);
+  }
+  
+  public function product()
+  {
+    $data = [
+      'title' => 'Product',
+      'parent' => 'pages',
+      'page' => 'product'
+    ];
+
+    $this->load->view('pages/product', $data);
+  }
+
+  public function market()
+  {
+    $data = [
+      'title' => 'Market',
+      'parent' => 'pages',
+      'page' => 'market'
+    ];
+
+    $this->load->view('pages/market', $data);
+  }
+
 
 
 

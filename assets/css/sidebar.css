@@ -54,7 +54,8 @@ a.item-menu.has-tree::after {
   transform: rotate(90deg);
 }
 
-a.item-menu.has-tree.active.arrow-down::after {
+a.item-menu.has-tree.active.arrow-down::after,
+a.item-menu.has-tree.active::after {
   color: #fff;
 }
 
