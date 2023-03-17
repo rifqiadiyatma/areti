@@ -186,7 +186,7 @@
       </nav>
       <section class="title-content p-3">
         <h3><?= $title ?></h3>
-        <p>Welcome to ARETI</p>
+        <p>Starter page without content</p>
       </section>
       <section class="container-fluid">
         <div class="row">

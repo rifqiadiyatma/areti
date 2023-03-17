@@ -190,7 +190,130 @@
       </section>
       <section class="container-fluid">
         <div class="row">
-
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card mb-3">
+              <img src="<?= base_url('assets/images/dummy-product2.jpg') ?>" class="img-fluid rounded-4" alt="...">
+              <div class="card-body px-0">
+                <div class="row">
+                  <div class="col-10">
+                    <h5 class="card-title fw-bold">Nike Airforce</h5>
+                  </div>
+                  <div class="col-2 text-end">
+                    <i class="fa-solid fa-heart me-2" style="font-size: 1.5em; color: red;"></i>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <span class="badge text-bg-primary me-2">Blue</span>
+                    <span class="badge text-bg-danger me-2">Red</span>
+                    <span class="badge text-bg-light border me-2">White</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer px-0 d-flex justify-content-between align-items-center ">
+                <div class="row">
+                  <span class="text-muted fw-normal">Price :</span>
+                  <h5 class="m-0 text-primary fw-bold">Rp. 200.000</h5>
+                </div>
+                <div class="row me-2">
+                  <button type="button" class="btn btn-primary rounded-pill">Buy</button>                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card mb-3">
+              <img src="<?= base_url('assets/images/dummy-product2.jpg') ?>" class="img-fluid rounded-4" alt="...">
+              <div class="card-body px-0">
+                <div class="row">
+                  <div class="col-10">
+                    <h5 class="card-title fw-bold">Nike Airforce</h5>
+                  </div>
+                  <div class="col-2 text-end">
+                    <i class="fa-solid fa-heart me-2" style="font-size: 1.5em; color: red;"></i>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <span class="badge text-bg-primary me-2">Blue</span>
+                    <span class="badge text-bg-danger me-2">Red</span>
+                    <span class="badge text-bg-light border me-2">White</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer px-0 d-flex justify-content-between align-items-center ">
+                <div class="row">
+                  <span class="text-muted fw-normal">Price :</span>
+                  <h5 class="m-0 text-primary fw-bold">Rp. 200.000</h5>
+                </div>
+                <div class="row me-2">
+                  <button type="button" class="btn btn-primary rounded-pill">Buy</button>                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card mb-3">
+              <img src="<?= base_url('assets/images/dummy-product2.jpg') ?>" class="img-fluid rounded-4" alt="...">
+              <div class="card-body px-0">
+                <div class="row">
+                  <div class="col-10">
+                    <h5 class="card-title fw-bold">Nike Airforce</h5>
+                  </div>
+                  <div class="col-2 text-end">
+                    <i class="fa-solid fa-heart me-2" style="font-size: 1.5em; color: red;"></i>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <span class="badge text-bg-primary me-2">Blue</span>
+                    <span class="badge text-bg-danger me-2">Red</span>
+                    <span class="badge text-bg-light border me-2">White</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer px-0 d-flex justify-content-between align-items-center ">
+                <div class="row">
+                  <span class="text-muted fw-normal">Price :</span>
+                  <h5 class="m-0 text-primary fw-bold">Rp. 200.000</h5>
+                </div>
+                <div class="row me-2">
+                  <button type="button" class="btn btn-primary rounded-pill">Buy</button>                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card mb-3">
+              <img src="<?= base_url('assets/images/dummy-product2.jpg') ?>" class="img-fluid rounded-4" alt="...">
+              <div class="card-body px-0">
+                <div class="row">
+                  <div class="col-10">
+                    <h5 class="card-title fw-bold">Nike Airforce</h5>
+                  </div>
+                  <div class="col-2 text-end">
+                    <i class="fa-solid fa-heart me-2" style="font-size: 1.5em; color: red;"></i>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <span class="badge text-bg-primary me-2">Blue</span>
+                    <span class="badge text-bg-danger me-2">Red</span>
+                    <span class="badge text-bg-light border me-2">White</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer px-0 d-flex justify-content-between align-items-center ">
+                <div class="row">
+                  <span class="text-muted fw-normal">Price :</span>
+                  <h5 class="m-0 text-primary fw-bold">Rp. 200.000</h5>
+                </div>
+                <div class="row me-2">
+                  <button type="button" class="btn btn-primary rounded-pill">Buy</button>                  
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

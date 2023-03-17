@@ -198,7 +198,7 @@
             <div class="card">
               <div class="card-header">Basic Select2 Example</div>
               <div class="card-body">
-                <select class="js-example-basic-single form-control" name="option">
+                <select class="js-example-basic-single form-select" name="option">
                   <?php for($i = 1; $i <= 50; $i++) : ?> 
                     <?= '<option value="Option-'.$i.'">Option-'.$i.'</option>'; ?>
                   <?php endfor ?>
@@ -213,7 +213,7 @@
             <div class="card">
               <div class="card-header">Basic Select2 Multi-select Example</div>
               <div class="card-body">
-                <select class="js-example-basic-multiple form-control" name="options[]" multiple="multiple">
+                <select class="js-example-basic-multiple form-select" name="options[]" multiple="multiple">
                   <?php for($i = 1; $i <= 50; $i++) : ?> 
                     <?= '<option value="Option-'.$i.'">Option-'.$i.'</option>'; ?>
                   <?php endfor ?>

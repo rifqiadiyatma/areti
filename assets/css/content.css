@@ -6,6 +6,10 @@
   transition: all 0.5s ease;
 }
 
+.bg-topnav {
+  background: #f8f9fd;
+}
+
 .content.active {
   margin-left: 0px;
 }
@@ -81,7 +85,7 @@
   background-color: #181a1b;
 } */
 
-html[data-bs-theme="dark"] .content {
+html[data-bs-theme="dark"] .content, html[data-bs-theme="dark"] .bg-topnav {
   background-color: #1b1d1e;
 }
 

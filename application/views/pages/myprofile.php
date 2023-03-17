@@ -191,7 +191,7 @@
       <section class="container-fluid">
         <div class="row mb-3">
           <div class="col-lg-3 col-12 mb-3">
-            <div class="card text-center">
+            <div class="card shadow text-center">
               <div class="card-body">
                 <div class="row">
                   <div class="col-12">
@@ -207,7 +207,7 @@
             </div>
           </div>
           <div class="col-lg-6 col-12">
-            <div class="card">
+            <div class="card shadow">
               <div class="card-body p-0">
                 <div class="row">
                   <div class="col-12">
@@ -258,7 +258,7 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <div class="card">
+            <div class="card shadow">
               <div class="card-header">About Me</div>
               <div class="card-body">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corrupti omnis repellendus architecto ad fugit sed aperiam, vero nostrum sapiente, recusandae dolorem maiores provident. Exercitationem eveniet quod placeat accusamus impedit eos vel veniam non voluptatem illo, corrupti aliquid nulla esse ea consequuntur ipsa officia. Cum quia, ullam eius iusto, nihil veritatis tenetur impedit animi accusantium excepturi adipisci ratione magnam hic. Minus beatae, dolores adipisci quidem id necessitatibus corrupti inventore laudantium sapiente iure voluptas aut velit error eaque in quisquam provident mollitia, amet tenetur voluptatem repellat quaerat accusamus perspiciatis facilis! A exercitationem placeat expedita suscipit consequuntur alias magnam saepe magni ad!</p>

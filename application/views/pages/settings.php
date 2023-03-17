@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="<?= base_url('assets/modules/bootstrap/css/bootstrap.min.css') ?>">
     <!-- External CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/css/styles.css') ?>" type="text/css" />
+    <!-- CKEditor -->
+    <script src="<?= base_url('assets/modules/ckeditor/ckeditor.js') ?>"></script>
     <!-- Fontawesome -->
     <link rel="stylesheet" href="<?= base_url('assets/modules/fontawesome/css/all.min.css') ?>">
   </head>
@@ -186,11 +188,45 @@
       </nav>
       <section class="title-content p-3">
         <h3><?= $title ?></h3>
-        <p>Welcome to ARETI</p>
+        <p>App Settings</p>
       </section>
       <section class="container-fluid">
         <div class="row">
-
+        <div class="col-12">
+            <div class="card shadow">
+              <div class="card-body">
+                <form>
+                  <div class="row mb-3">
+                    <label for="inputName" class="col-sm-2 col-form-label fw-bold">App Name</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="inputName" placeholder="Your App Name">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="inputName" class="col-sm-2 col-form-label fw-bold">App Description</label>
+                      <div class="col-sm-10">
+                        <div id="editor"> Your App Description...</div>
+                      </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="input" class="col-sm-2 col-form-label fw-bold">Logo App</label>
+                    <div class="col-sm-10">
+                      <div class="input-group">
+                        <input type="file" class="form-control" id="inputGroupFile">
+                        <label class="input-group-text" for="inputGroupFile">Upload</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-end mt-3">
+                      <a type="button" href="#" class="btn btn-outline-primary">Cancel</a>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -200,5 +236,13 @@
     <script src="<?= base_url('assets/modules/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
     <!-- App JS -->
     <script src="<?= base_url('assets/js/script.js') ?>"></script>
+    <!-- CKEditor Starter Init -->
+    <script>
+      ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+          console.error( error );
+      } );
+    </script>
   </body>
 </html>

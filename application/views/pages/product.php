@@ -235,7 +235,7 @@
                         <td>
                           <div class="hstack gap-2">
                             <img src="<?= base_url('assets/images/avatar-2.jpg') ?>" class="user-img" alt="">
-                            Megawati
+                            Prabowo
                           </div>
                         </td>
                         <td>
@@ -262,7 +262,7 @@
                         <td>
                           <div class="hstack gap-2">
                             <img src="<?= base_url('assets/images/avatar-2.jpg') ?>" class="user-img" alt="">
-                            Megawati
+                            Prabowo
                           </div>
                         </td>
                         <td>
@@ -289,7 +289,7 @@
                         <td>
                           <div class="hstack gap-2">
                             <img src="<?= base_url('assets/images/avatar-2.jpg') ?>" class="user-img" alt="">
-                            Megawati
+                            Prabowo
                           </div>
                         </td>
                         <td>
@@ -316,7 +316,7 @@
                         <td>
                           <div class="hstack gap-2">
                             <img src="<?= base_url('assets/images/avatar-2.jpg') ?>" class="user-img" alt="">
-                            Megawati
+                            Prabowo
                           </div>
                         </td>
                         <td>
@@ -343,7 +343,7 @@
                         <td>
                           <div class="hstack gap-2">
                             <img src="<?= base_url('assets/images/avatar-2.jpg') ?>" class="user-img" alt="">
-                            Megawati
+                            Prabowo
                           </div>
                         </td>
                         <td>
@@ -370,7 +370,7 @@
                         <td>
                           <div class="hstack gap-2">
                             <img src="<?= base_url('assets/images/avatar-2.jpg') ?>" class="user-img" alt="">
-                            Megawati
+                            Prabowo
                           </div>
                         </td>
                         <td>
@@ -397,7 +397,7 @@
                         <td>
                           <div class="hstack gap-2">
                             <img src="<?= base_url('assets/images/avatar-2.jpg') ?>" class="user-img" alt="">
-                            Megawati
+                            Prabowo
                           </div>
                         </td>
                         <td>
@@ -424,7 +424,7 @@
                         <td>
                           <div class="hstack gap-2">
                             <img src="<?= base_url('assets/images/avatar-2.jpg') ?>" class="user-img" alt="">
-                            Megawati
+                            Prabowo
                           </div>
                         </td>
                         <td>
@@ -451,7 +451,7 @@
                         <td>
                           <div class="hstack gap-2">
                             <img src="<?= base_url('assets/images/avatar-2.jpg') ?>" class="user-img" alt="">
-                            Megawati
+                            Prabowo
                           </div>
                         </td>
                         <td>
@@ -478,7 +478,7 @@
                         <td>
                           <div class="hstack gap-2">
                             <img src="<?= base_url('assets/images/avatar-2.jpg') ?>" class="user-img" alt="">
-                            Megawati
+                            Prabowo
                           </div>
                         </td>
                         <td>
@@ -505,7 +505,7 @@
                         <td>
                           <div class="hstack gap-2">
                             <img src="<?= base_url('assets/images/avatar-2.jpg') ?>" class="user-img" alt="">
-                            Megawati
+                            Prabowo
                           </div>
                         </td>
                         <td>
@@ -532,7 +532,7 @@
                         <td>
                           <div class="hstack gap-2">
                             <img src="<?= base_url('assets/images/avatar-2.jpg') ?>" class="user-img" alt="">
-                            Megawati
+                            Prabowo
                           </div>
                         </td>
                         <td>
@@ -576,7 +576,7 @@
           columnDefs: [
             {
               targets: [5, 6],
-              className: 'dt-body-center'
+              className: 'dt-body-center dt-head-center'
             }
           ]
         });

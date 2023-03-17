@@ -186,11 +186,99 @@
       </nav>
       <section class="title-content p-3">
         <h3><?= $title ?></h3>
-        <p>Welcome to ARETI</p>
+        <p>Page for add product</p>
       </section>
       <section class="container-fluid">
         <div class="row">
+          <div class="col-12">
+            <div class="card shadow">
+              <div class="card-body">
+                <form>
+                  <div class="row mb-3">
+                    <label for="inputProduct" class="col-sm-2 col-form-label fw-bold">Name of product</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="inputProduct" placeholder="Product name">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="inputPrice" class="col-sm-2 col-form-label fw-bold">Price</label>
+                    <div class="col-sm-10">
+                      <div class="input-group">
+                        <span class="input-group-text">Rp.</span>
+                        <input type="text" class="form-control" id="inputPrice">
+                        <span class="input-group-text">.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="inputQuantity" class="col-sm-2 col-form-label fw-bold">Quantity</label>
+                    <div class="col-sm-10">
+                      <div class="input-group">
+                        <input type="number" class="form-control" id="inputQuantity" placeholder="1, 2, 3 ...">
+                        <span class="input-group-text">pcs</span>
+                      </div>  
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="input" class="col-sm-2 col-form-label fw-bold">Buyers</label>
+                    <div class="col-sm-10">
+                      <div class="input-group">
+                        <select name="buyers" id="buyers" class="form-select">
+                          <option selected>Select Buyer....</option>
+                          <option value="Jokowi">Jokowi</option>
+                          <option value="Prabowo">Prabowo</option>
+                        </select>
+                        <label class="input-group-text" for="inputGroupBuyer">Choose</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="input" class="col-sm-2 col-form-label fw-bold">Seller</label>
+                    <div class="col-sm-10">
+                      <div class="input-group">
+                        <select name="seller" id="seller" class="form-select">
+                          <option selected>Select Seller....</option>
+                          <option value="Jokowi">Jokowi</option>
+                          <option value="Prabowo">Prabowo</option>
+                        </select>
+                        <label class="input-group-text" for="inputGroupSeller">Choose</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="input" class="col-sm-2 col-form-label fw-bold">Image</label>
+                    <div class="col-sm-10">
+                      <div class="input-group">
+                        <input type="file" class="form-control" id="inputGroupFile">
+                        <label class="input-group-text" for="inputGroupFile">Upload</label>
+                      </div>
+                    </div>
+                  </div>
+                  <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0 fw-bold">Status</legend>
+                    <div class="col-sm-10">
+                      <div class="btn-group">
+                        <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
+                        <label class="btn btn-outline-success" for="success-outlined">Delivered</label>
 
+                        <input type="radio" class="btn-check" name="options-outlined" id="primary-outlined" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="primary-outlined">Pick</label>
+
+                        <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+                        <label class="btn btn-outline-danger" for="danger-outlined">Failed</label>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <div class="row">
+                    <div class="col text-end">
+                      <a type="button" href="#" class="btn btn-outline-primary">Cancel</a>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

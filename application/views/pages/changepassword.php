@@ -186,11 +186,51 @@
       </nav>
       <section class="title-content p-3">
         <h3><?= $title ?></h3>
-        <p>Welcome to ARETI</p>
+        <p>Account Settings</p>
       </section>
       <section class="container-fluid">
         <div class="row">
-
+        <div class="col-12">
+            <div class="card shadow">
+              <div class="card-body">
+                <form>
+                  <div class="row mb-3">
+                    <label for="inputOldPassword" class="col-sm-3 col-form-label fw-bold">Old Password</label>
+                    <div class="col-sm-9">
+                      <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-user-lock"></i></span>
+                        <input type="password" class="form-control" id="inputOldPassword">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="inputNewPassword" class="col-sm-3 col-form-label fw-bold">New Password</label>
+                    <div class="col-sm-9">
+                      <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" class="form-control" id="inputNewPassword">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="inputNewPasswordConfirmation" class="col-sm-3 col-form-label fw-bold">New Password Confirmation</label>
+                    <div class="col-sm-9">
+                      <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" class="form-control" id="inputNewPasswordConfirmation">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col text-end">
+                      <a type="button" href="#" class="btn btn-outline-primary">Cancel</a>
+                      <button type="submit" class="btn btn-primary">Update</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
