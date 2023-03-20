@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/styles.css') ?>" type="text/css" />
     <!-- Fontawesome -->
     <link rel="stylesheet" href="<?= base_url('assets/modules/fontawesome/css/all.min.css') ?>">
+    <!-- initTheme -->
+    <script src="<?= base_url('assets/js/theme.js') ?>"></script>
   </head>
   <body>
     <!-- Bottom Navbar -->
@@ -188,6 +190,26 @@
         <h3><?= $title ?></h3>
         <p>Check documentation <a href="https://getbootstrap.com/docs/5.3/components/toasts/" target="_blank">toast</a></p>
       </section>
+      <div class="d-flex justify-content-between">
+        <section class="title-content p-3">
+          <h3><?= $title ?></h3>
+          <p>Check here for more icons <a href="https://icons.getbootstrap.com/" target="_blanks">Bootstrap Icon</a></p>
+        </section>
+        <nav aria-label="breadcrumb" class="align-self-center d-none d-md-block">
+          <ol class="breadcrumb">
+            <?php for($i = 1; $i <= $this->uri->total_segments(); $i++) : 
+              if ($i == $this->uri->total_segments()) : ?>
+                <li class="breadcrumb-item text-capitalize">
+                  <?= $this->uri->segment($i) ?>
+                </li>
+              <?php else : ?> 
+                <li class="breadcrumb-item text-capitalize active">
+                  <?= '<a href='. base_url($this->uri->segment($i)) .'>'.$this->uri->segment($i).'</a>' ?>
+                </li>
+            <?php endif; endfor; ?>
+          </ol>
+        </nav>
+      </div>
       <section class="container-fluid">
         <div class="row">
           <div class="col-12">

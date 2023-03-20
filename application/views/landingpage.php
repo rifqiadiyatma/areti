@@ -23,25 +23,25 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item align-self-center">
+          <li class="nav-item align-self-center me-md-4">
             <a class="nav-link text-primary active" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item align-self-center">
+          <li class="nav-item align-self-center me-md-4">
             <a class="nav-link" href="#">Products</a>
           </li>
-          <li class="nav-item align-self-center">
+          <li class="nav-item align-self-center me-md-4">
             <a class="nav-link" href="#">Profile</a>
           </li>
           <li class="nav-item align-self-center me-md-5">
             <a class="nav-link" href="#">About</a>
           </li>
-          <a href="#" class="btn btn-primary ms-md-5 px-3">Sign in</a>
+          <a href="<?= base_url('auth/login') ?>" class="btn btn-primary ms-md-5 px-3">Sign in</a>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container mt-5">
+  <div class="container mt-3 mb-5">
     <div class="row">
       <div class="col align-self-center">
         <h1 class="mb-4">The Design Thinking Superpowers</h1>
@@ -53,7 +53,7 @@
       </div>
     </div>
     <div class="row mt-5">
-      <div class="col text-center">
+      <div class="col text-center fw-bold">
         <h4>Our Features</h4>
       </div>
     </div>
@@ -86,7 +86,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> 
 
   <!-- Jquery -->
   <script src="<?= base_url('assets/js/jquery.min.js') ?>"></script>

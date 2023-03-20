@@ -13,7 +13,6 @@ class Dashboard extends CI_Controller {
       'title' => 'Dashboard',
       'page' => 'dashboard'
     ];
-    
     $this->load->view('dashboard', $data);
   }
 

@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="<?= base_url('assets/modules/fontawesome/css/all.min.css') ?>">
     <!-- Datatables Bootstrap -->
     <link rel="stylesheet" href="<?= base_url('assets/modules/datatables/css/dataTables.bootstrap5.min.css') ?>">
+    <!-- initTheme -->
+    <script src="<?= base_url('assets/js/theme.js') ?>"></script>
   </head>
   <body>
     <!-- Bottom Navbar -->
@@ -170,26 +172,42 @@
               <img src="<?= base_url('assets/images/avatar.jpg') ?>" alt="Photo Profile" class="avatar dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" />
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">Akun Saya</a>
+                  <a class="dropdown-item" href="<?= base_url('pages/myprofile') ?>">Akun Saya</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Ganti Password</a>
+                  <a class="dropdown-item" href="<?= base_url('pages/changepassword') ?>">Ganti Password</a>
                 </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Logout</a>
+                  <a class="dropdown-item" href="<?= base_url('auth/login') ?>">Logout</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
-      <section class="title-content p-3">
-        <h3><?= $title ?></h3>
-        <p>List Product</p>
-      </section>
+      <div class="d-flex justify-content-between">
+        <section class="title-content p-3">
+          <h3><?= $title ?></h3>
+          <p>List Products</p>
+        </section>
+        <nav aria-label="breadcrumb" class="align-self-center d-none d-md-block">
+          <ol class="breadcrumb">
+            <?php for($i = 1; $i <= $this->uri->total_segments(); $i++) : 
+              if ($i == $this->uri->total_segments()) : ?>
+                <li class="breadcrumb-item text-capitalize">
+                  <?= $this->uri->segment($i) ?>
+                </li>
+              <?php else : ?> 
+                <li class="breadcrumb-item text-capitalize active">
+                  <?= '<a href='. base_url($this->uri->segment($i)) .'>'.$this->uri->segment($i).'</a>' ?>
+                </li>
+            <?php endif; endfor; ?>
+          </ol>
+        </nav>
+      </div>
       <section class="container-fluid">
         <div class="row mb-3">
           <div class="col-12">

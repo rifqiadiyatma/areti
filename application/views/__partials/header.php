@@ -13,4 +13,6 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/styles.css') ?>" type="text/css" />
     <!-- Fontawesome -->
     <link rel="stylesheet" href="<?= base_url('assets/modules/fontawesome/css/all.min.css') ?>">
+    <!-- initTheme -->
+    <script src="<?= base_url('assets/js/theme.js') ?>"></script>
   </head>

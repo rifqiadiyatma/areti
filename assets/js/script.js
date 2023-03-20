@@ -12,9 +12,10 @@ $(function () {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
+$(function () {
   $('#dark-mode').on('click', function () {
     $('html').attr('data-bs-theme', (_, attr) => attr == "light" ? "dark" : "light");
+    localStorage.setItem("areti-theme", $('html').attr('data-bs-theme'));
     $(this).toggleClass('btn-outline-secondary btn-primary');
     $(this).find('i').toggleClass('fa-moon fa-sun');
   });
