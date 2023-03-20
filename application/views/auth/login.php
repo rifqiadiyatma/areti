@@ -18,7 +18,7 @@
       <div class="col p-4">
         <div class="card shadow-lg">
           <div class="card-header">
-            <h1 class="fs-4 fw-bold text-primary">Login Page</h1>
+            <h1 class="fs-2 fw-bold text-primary">Login Page</h1>
           </div>
           <div class="card-body">
             <p class="text-muted">Silahkan Masuk</p>

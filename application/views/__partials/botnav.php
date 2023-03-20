@@ -1,6 +1,6 @@
-<body data-bs-theme="light">
+<body>
     <!-- Bottom Navbar -->
-    <nav class="navbar bg-body-tertiary navbar-expand fixed-bottom p-0 d-md-none d-lg-none d-xl-none">
+    <nav class="navbar bg-body-tertiary navbar-expand border-top fixed-bottom p-0 d-md-none d-lg-none d-xl-none">
         <ul class="navbar-nav nav-justified w-100">
             <li class="nav-item">
                 <a href="#" class="nav-link text-center">

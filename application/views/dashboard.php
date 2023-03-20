@@ -195,7 +195,7 @@
               <div class="card-body">
                 <div class="row">
                   <div class="col-auto pe-0">
-                    <div class="icon icon-shape text-light bg-success rounded-4">
+                    <div class="icon icon-box text-light bg-success rounded-4">
                       <i class="fas fa-envelope"></i>
                     </div>
                   </div>
@@ -217,7 +217,7 @@
               <div class="card-body">
                 <div class="row">
                   <div class="col-auto pe-0">
-                    <div class="icon icon-shape text-light bg-warning rounded-4">
+                    <div class="icon icon-box text-light bg-warning rounded-4">
                       <i class="fas fa-shop"></i>
                     </div>
                   </div>
@@ -239,7 +239,7 @@
               <div class="card-body">
                 <div class="row">
                   <div class="col-auto pe-0">
-                    <div class="icon icon-shape text-light bg-primary rounded-4">
+                    <div class="icon icon-box text-light bg-primary rounded-4">
                       <i class="fas fa-user"></i>
                     </div>
                   </div>
@@ -261,7 +261,7 @@
               <div class="card-body">
                 <div class="row">
                   <div class="col-auto pe-0">
-                    <div class="icon icon-shape text-light bg-danger rounded-4">
+                    <div class="icon icon-box text-light bg-danger rounded-4">
                       <i class="fas fa-trash"></i>
                     </div>
                   </div>

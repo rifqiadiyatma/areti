@@ -13,7 +13,7 @@
           <div class="d-flex align-items-center justify-content-end gap-4">
             <button class="btn btn-outline-secondary rounded-circle" id="dark-mode"><i class="fa fa-moon"></i></button>
             <div class="btn-group dropstart">
-              <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="Photo Profile" class="avatar dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" />
+              <img src="<?= base_url('assets/images/avatar.jpg') ?>" alt="Photo Profile" class="avatar dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" />
               <ul class="dropdown-menu">
                 <li>
                   <a class="dropdown-item" href="#">Akun Saya</a>
@@ -34,6 +34,7 @@
       </nav>
       <section class="title-content p-3">
         <h3><?= $title ?></h3>
-        <p>Lorem Ipsum</p>
+        <p>Starter page without content</p>
       </section>
       <section class="container-fluid">
+        <div class="row">

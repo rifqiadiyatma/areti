@@ -89,6 +89,6 @@ html[data-bs-theme="dark"] .content, html[data-bs-theme="dark"] .bg-topnav {
   background-color: #1b1d1e;
 }
 
-html[data-bs-theme="dark"] i {
+html[data-bs-theme="dark"] .cta_sidebar i, html[data-bs-theme="dark"] [data-bs-target=".sidebar"] {
   color: #fff;
 }
