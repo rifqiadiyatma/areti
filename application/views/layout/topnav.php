@@ -15,13 +15,9 @@
     <link rel="stylesheet" href="<?= base_url('assets/modules/fontawesome/css/all.min.css') ?>">
     <style>
       body {
-        /* min-height: 100vh; */
-        /* padding-top: 4rem; */
+      .sticky-top {
+          padding-top: 66px;
       }
-
-.sticky-top {
-    padding-top: 66px;
-}
     </style>
   </head>
   <body>
@@ -124,185 +120,11 @@
       </nav>
       </div>
 
-      <main class="container-fluid bg-topnav">
+      <main class="container-fluid bg-topnav vh-100">
         <div class="container">
           <div class="row">
           <div class="col-12">
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
-            <h1>TOP NAVIGATION</h1>
+
           </div>
           </div>
         </div>
