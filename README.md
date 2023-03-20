@@ -1,5 +1,5 @@
 # :page_facing_up: ARETI TEMPLATE
-__ARETI__ adalah sebuah starter kit template admin yang dibangun menggunakan HTML, CSS, JQuery, dan CodeIgniter 3    
+__ARETI__ adalah sebuah starter kit template admin yang dibangun menggunakan HTML, CSS, Bootstrap, JQuery, dan CodeIgniter 3    
 
 ### 📷 Tampilan Aplikasi
 <img src="ss/dashboard-light.png" />
