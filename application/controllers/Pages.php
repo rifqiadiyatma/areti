@@ -73,9 +73,6 @@ class Pages extends CI_Controller {
     $this->load->view('pages/market', $data);
   }
 
-
-
-
 }
 
 /* End of file: Pages.php */
